@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WEBFLIX</title>
+    <link rel="stylesheet" href="css/index.css">
+</head>
+<body>
+    <header>
+        <div class="header-wrap">
+            <div class="wrapp-list">
+                <div><a href="#" id="logo"><img src="/img/short-logo-netflix.png" alt=""></a></div>
+                <nav>
+                    <ul class="nav-list">
+                        <li id="inicio-link">Início</li>
+                        <li>Séries</li>
+                        <li>Filmes</li>
+                        <li>Bombando</li>
+                        <li>Minha lista</li>
+                        <li>Idioma e legendas</li>
+                    </ul>
+                    <div class="seta-navegar"  onmouseover="onMouseOver()">
+                        <p style="cursor: pointer;">navegar</p>
+                        <div id="seta"></div>
+                    </div>
+                </nav>
+            </div>
+            <div class="container-nav-share">
+                <div class="nav-share">
+                    <ul>
+                        <li><i class="bi bi-search"></i></li>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
+                            <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"/>
+                          </svg>
+                        <li id="infantil">Infantil</li>
+                        <li><i class="bi bi-bell"></i></li>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-bell" viewBox="0 0 16 16">
+                            <path d="M8 16a2 2 0 0 0 2-2H6a2 2 0 0 0 2 2zM8 1.918l-.797.161A4.002 4.002 0 0 0 4 6c0 .628-.134 2.197-.459 3.742-.16.767-.376 1.566-.663 2.258h10.244c-.287-.692-.502-1.49-.663-2.258C12.134 8.197 12 6.628 12 6a4.002 4.002 0 0 0-3.203-3.92L8 1.917zM14.22 12c.223.447.481.801.78 1H1c.299-.199.557-.553.78-1C2.68 10.2 3 6.88 3 6c0-2.42 1.72-4.44 4.005-4.901a1 1 0 1 1 1.99 0A5.002 5.002 0 0 1 13 6c0 .88.32 4.2 1.22 6z"/>
+                          </svg>
+                        <li id="img-profile"><img src="img/pooIcon.jpg" alt=""></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </header>
+    <div id="main-video"><iframe width="100%" height="100%" src="https://www.youtube.com/embed/DRSbkYryPhA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; autoplay;picture-in-picture" allowfullscreen></iframe></div>
+    <div id="content-seta" onmouseleave="onMouseLeave()">
+        <ul>
+            <p style="color:aliceblue;" id="closeNavSeta">X</p>
+            <li>Séries</li>
+            <li>Filmes</li>
+            <li>Bombando</li>
+            <li>Minha lista</li>
+            <li>Idioma e legendas</li>
+        </ul>
+        <div id="seta-content"></div>
+    </div>
+    <main>
+        <div class="main-wrapp">
+            <div class="justify-center column-center">
+                <h2>Séries</h2>
+                <div class="video-wrapp">
+                    <div class="video-content"><img src="img/Peaky-Blinders-seizoen-3.jpg" alt=""></div>
+                    <div class="video-content"><img src="img/rickAndMorty.jpg" alt=""></div>
+                    <div class="video-content"><img src="img/darka.jpg" alt=""></div>
+                    <div class="video-content"><img src="img/vk.jpg" alt=""></div>
+                    <div class="video-content"><img src="img/Arcane.png" alt=""></div>
+                    <div class="video-content"><img src="img/The-Witcher-Netflix-Poster.jpg" alt=""></div>
+                </div>
+                <h2>Continuar assistindo</h2>
+                <div class="video-wrapp">
+                    <div class="video-content"><img src="img/Peaky-Blinders-seizoen-3.jpg" alt=""></div>
+                    <div class="video-content"><img src="img/rickAndMorty.jpg" alt=""></div>
+                    <div class="video-content"><img src="img/bastardos-inglórios.jpg" alt=""></div>
+                    <div class="video-content"><img src="img/vk.jpg" alt=""></div>
+                    <div class="video-content"><img src="img/gente-grande-destaque.jpg" alt=""></div>
+                    <div class="video-content"><img src="img/The-Witcher-Netflix-Poster.jpg" alt=""></div>
+                </div>
+                <h2>Em alta</h2>
+                <div class="video-wrapp">
+                    <div class="video-content"><img src="img/Peaky-Blinders-seizoen-3.jpg" alt=""></div>
+                    <div class="video-content"><img src="img/rickAndMorty.jpg" alt=""></div>
+                    <div class="video-content"><img src="img/bastardos-inglórios.jpg" alt=""></div>
+                    <div class="video-content"><img src="img/vk.jpg" alt=""></div>
+                    <div class="video-content"><img src="img/gente-grande-destaque.jpg" alt=""></div>
+                    <div class="video-content"><img src="img/The-Witcher-Netflix-Poster.jpg" alt=""></div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+
+    <script src="/js/index.js"></script>
+</body>
+</html>
